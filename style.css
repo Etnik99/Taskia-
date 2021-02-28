@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", bold;
+  background-image: url(./images/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button {
+  font-family: "poppins", bold;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #525ffb;
+  font-style: "Poppins";
+  width: 150px;
+  height: 65px;
+}
+
+.logo-container,
+.cart {
+  display: flex;
+}
+.logo-container {
+  flex: 1;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.logo-container h4 {
+  font-size: 30px;
+}
+
+.try-freebtn {
+  border: 2px solid #525ffb;
+  background: transparent;
+  color: #525ffb;
+  width: 147px;
+  height: 58px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 70px;
+  margin-top: 56px;
+}
+
+.presentation {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  align-items: center;
+  padding: 0 80px;
+}
+.introduction {
+  flex: 1;
+  max-width: 1039px;
+  height: 477px;
+  margin-top: 50px;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  font-style: "Poppins" bold;
+}
+.intro-text p {
+  margin-top: 5px;
+  color: #beb8b8;
+  font-family: "Muli" bold;
+  font-size: 16px;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+.cta-select {
+  border: 2px solid #525ffb;
+  background: transparent;
+  color: #beb8b8;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 25px;
+  font-family: "Muli";
+  text-align: center;
+}
+
+.cta-add {
+  background: #525ffb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  margin: 30px 0px 0px 30px;
+  border-radius: 25px;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  height: 600px;
+  margin-right: 90px;
+}
+.cover img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 1px 1px rgb(131, 119, 119));
+  animation: drop 2.5s ease;
+}
+
+.container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins" bold;
+  margin-top: 100px;
+}
+.container-text h1 {
+  font-size: 50px;
+}
+
+.box-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+.single-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  background-color: none;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.single-box:nth-child(1) .img-area {
+  background-image: url(./images/day80-tea.png);
+}
+.single-box:nth-child(1) {
+  background-color: #525ffb;
+  margin-left: 150px;
+  color: white;
+}
+.single-box:nth-child(2) .img-area {
+  background-image: url(./images/day78-wallet.png);
+}
+.single-box:nth-child(2) {
+  background-color: #e9f0ff;
+  margin-top: 200px;
+}
+
+.single-box:nth-child(3) .img-area {
+  background-image: url(./images/day77-pocket-knief.png);
+}
+.single-box:nth-child(3) {
+  background-color: #ffe7aa;
+  margin-top: 100px;
+  margin-right: 150px;
+}
+
+.img-text {
+  font-family: "Poppins", bold;
+  margin-top: 15px;
+  font-size: 32px;
+}
+.img-text p {
+  font-family: "Muli" bold;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.single-box:hover {
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+  transform: scale(1.1);
+}
+
+.presentation2 {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  align-items: center;
+}
+.introduction2 {
+  flex: 1;
+  margin-right: 150px;
+}
+.presentation2 .image {
+  height: 380px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.text h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-family: "Poppins" bold;
+}
+.text p {
+  margin-top: 0px;
+  font-size: 18px;
+  color: #585772;
+  font-family: "Muli";
+}
+.btn {
+  padding: 15px 0px 0px 0px;
+}
+
+.btn-lm {
+  margin-top: 10px;
+  border: 2px solid #525ffb;
+  background: #525ffb;
+  color: white;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-lm:hover {
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+.image img {
+  height: 100%;
+  filter: drop-shadow(0px 0px 2px 2px rgb(131, 119, 119));
+  animation: drop 2.5s ease;
+}
+
+.presentation3 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  align-items: center;
+}
+.introduction3 {
+  flex: 1;
+  margin-left: 120px;
+}
+.presentation3 .cover {
+  height: 400px;
+}
+
+.intro-text3 h1 {
+  font-size: 44px;
+  font-weight: 500;
+}
+.intro-text3 p {
+  margin-top: 5px;
+  color: #beb8b8;
+  font-family: "Muli" bold;
+  font-size: 16px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+}
+.img-1 {
+  width: 46px;
+  height: 55px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.img-2 {
+  margin-top: 30px;
+  width: 122px;
+  height: 81px;
+}
+
+.presentation4 {
+  width: 100%;
+  position: relative;
+}
+.presentation4 h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 50px;
+}
+.presentation4 p {
+  text-align: center;
+  font-family: "Poppins" bold;
+  font-size: 150px;
+  margin-top: 173px;
+  margin-bottom: 241px;
+  color: #525ffb;
+}
+
+.circle-images img {
+  border-radius: 50%;
+}
+.circle-images .c-1 img {
+  width: 139.76px;
+  height: 139.76px;
+  position: absolute;
+  top: 75.2px;
+  left: 100px;
+}
+.circle-images .c-2 img {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  top: 320px;
+  left: 300px;
+}
+.circle-images .c-3 img {
+  width: 72.62px;
+  height: 72.62px;
+  position: absolute;
+  top: 500px;
+  left: 140px;
+}
+.circle-images .c-4 img {
+  width: 139.76px;
+  height: 139.76px;
+  position: absolute;
+  top: 75.2px;
+  right: 100px;
+}
+.circle-images .c-5 img {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  top: 320px;
+  right: 300px;
+}
+.circle-images .c-6 img {
+  width: 72.62px;
+  height: 72.62px;
+  position: absolute;
+  top: 500px;
+  right: 140px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: px;
+}
+.f-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-text {
+  padding: 20px;
+}
+.footer .cta {
+  margin-bottom: 180px;
+}
+.f-intro h1 {
+  font-family: "poppins" bold;
+  font-size: 50px;
+}
+.f-text p {
+  font-family: "Muli";
+  font-size: 27px;
+  text-align: center;
+  color: #a4a3a6;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .presentation,
+  .presentation2,
+  .presentation3 {
+    flex-direction: column;
+  }
+  .presentation2 .image {
+    flex: 0.3;
+  }
+  .icon {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-right: 100px;
+  }
+  .cart .try-freebtn {
+    width: 100px;
+    height: 45px;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .presentation .cover {
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+
+  .container-text h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .single-box:nth-child(1) {
+    margin-left: 20px;
+  }
+  .single-box:nth-child(2) {
+    margin-left: 20px;
+  }
+  .single-box:nth-child(3) {
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .presentation2 .image img {
+    height: 220px;
+    margin-right: 30px;
+  }
+  .introduction2 .text h1 {
+    font-size: 30px;
+  }
+  .introduction2 .text p {
+    font-size: 14px;
+  }
+  .introduction2 {
+    width: 90%;
+    margin-left: 150px;
+  }
+  .introduction2 .text {
+    align-items: center;
+  }
+  .introduction3 {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .intro-text3 h1 {
+    font-size: 30px;
+  }
+  .intro-text3 p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .icon {
+    margin-left: 120px;
+    margin-bottom: 100px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .f-intro h1 {
+    font-size: 30px;
+  }
+  .f-text p {
+    font-size: 18px;
+  }
+  .footer .cta .cta-select {
+    width: 170px;
+  }
+  .footer .cta .cta-add {
+    width: 120px;
+  }
+  .circle-images .c-1 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+  }
+  .circle-images .c-2 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+  }
+  .circle-images .c-3 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 180px;
+    left: 190px;
+  }
+  .circle-images .c-4 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 140px;
+    right: 50px;
+  }
+  .circle-images .c-5 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 350px;
+    right: 210px;
+  }
+  .circle-images .c-6 img {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+  }
+  .presentation3 .cover img {
+    margin-left: 70px;
+  }
+  .presentation4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .presentation4 h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  .presentation4 p {
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+}
